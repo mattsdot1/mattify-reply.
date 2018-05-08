@@ -256,7 +256,7 @@ bot.on("message", function (message)
 		{
 			switch (args[0]) {
 			
-				case "ping":
+				case "test":
 					message.channel.send( message.author + "Pong!" );
 					args[0] = null;
 					break;
