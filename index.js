@@ -381,6 +381,7 @@ bot.on("message", function (message)
                 const updateEmbed = new Discord.RichEmbed().setColor("RANDOM").setTitle("Mattify Reply Updates!").setDescription(messages.first().content);
                 message.channel.send({ embed: updateEmbed }).catch(function() {});
                 });
+					
 		   break;
 				
 				case "addrole":
