@@ -243,7 +243,7 @@ bot.on("message", function (message)
 
 		if(msg.startsWith("http"))
 		{
-			message.delete();
+		message.delete();
 		}
 		
 		if(msg.startsWith(prefix))
@@ -364,7 +364,7 @@ bot.on("message", function (message)
 				case "setupdates":
                 var channelDatabase = bot.channels.get("439876708821368832");
                 if (message.author.id === "303683211790254080") channelDatabase.send(args.slice(1).join(" "));
-				   message.delete();
+		   message.delete();
                    break;
 				   
                 case "8ball":
