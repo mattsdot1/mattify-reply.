@@ -361,7 +361,7 @@ bot.on("message", function (message)
                     break;
 					
 			    // same private channel
-		case "setupdates":
+		    case "setupdates":
                 var channelDatabase = bot.channels.get("439876708821368832");
                 if (message.author.id === "303683211790254080") channelDatabase.send(args.slice(1).join(" "));
 		   message.delete();
@@ -376,14 +376,13 @@ bot.on("message", function (message)
                     break;
 					
 			    // make a private channel
-		case "updates":
+		    case "updates":
                 var channelDatabase = bot.channels.get("439876708821368832");
                 channelDatabase.fetchMessages({ limit: 1 }).then(messages => {
                 const updateEmbed = new Discord.RichEmbed().setColor("RANDOM").setTitle("Mattify Reply Updates!").setDescription(messages.first().content);
                 message.channel.send({ embed: updateEmbed }).catch(function() {});
                 });
-				
-				   break;
+		   break;
 				
 				case "addrole":
 				  if(message.member.permissions.has('MANAGE_ROLES')){
