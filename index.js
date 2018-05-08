@@ -20,7 +20,7 @@ var defrole ="Members";
 var mod;
 args = null;
 
-const token = "NDIyODk3MTU1NzA4MDI2ODgx.Daa0zw.IxghykPTCcmZTwi12SNFAynyhWg" ;
+const token = "NDIyODk3MTU1NzA4MDI2ODgx.DdOudA.XctvfYHOj8MuqguxVFxhr8xg-mY" ;
 
 var bot = new Discord.Client();
 
