@@ -257,7 +257,7 @@ bot.on("message", function (message)
 			switch (args[0]) {
 			
 				case "test":
-					message.channel.send( message.author + "Pong!" );
+					message.channel.send( message.author + " ,Mattify Reply Has Been Tested!" );
 					args[0] = null;
 					break;
 				
