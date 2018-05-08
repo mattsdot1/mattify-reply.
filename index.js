@@ -377,12 +377,12 @@ bot.on("message", function (message)
 					
 			    // make a private channel
 		case "updates":
+                var channelDatabase = bot.channels.get("439876708821368832");
                 channelDatabase.fetchMessages({ limit: 1 }).then(messages => {
                 const updateEmbed = new Discord.RichEmbed().setColor("RANDOM").setTitle("Mattify Reply Updates!").setDescription(messages.first().content);
                 message.channel.send({ embed: updateEmbed }).catch(function() {});
                 });
-					
-		   break;
+		    break;
 				
 				case "addrole":
 				  if(message.member.permissions.has('MANAGE_ROLES')){
